@@ -1,0 +1,29 @@
+{
+  "spots": [
+    {
+      "id": "dadash",
+      "name": "Dadash",
+      "address": "Hackney Road, London E2 7SJ"
+    },
+    {
+      "id": "logma",
+      "name": "Logma",
+      "address": "81 Goldsmiths Row, London E2 8QR"
+    },
+    {
+      "id": "mashi-sushi-and-momo",
+      "name": "Mashi Sushi and Momo",
+      "address": "17 Gossamer Gardens, London E2 9FN"
+    },
+    {
+      "id": "bread-and-truffle",
+      "name": "Bread and Truffle",
+      "address": "376 Mentmore Terrace, London E8 3DQ"
+    },
+    {
+      "id": "netil-market",
+      "name": "Netil Market",
+      "address": "13-23 Westgate St, London E8 3RL"
+    }
+  ]
+}

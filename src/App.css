@@ -1,0 +1,268 @@
+:root {
+  color: #2c1810;
+  background:
+    radial-gradient(circle at top, rgba(255, 214, 170, 0.7), transparent 42%),
+    linear-gradient(180deg, #fff8f1 0%, #f6ebe1 100%);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  width: min(100%, 42rem);
+  margin: 0 auto;
+  padding: 0 1rem 2.5rem;
+}
+
+.app-header {
+  margin: 0 -1rem 1.5rem;
+}
+
+.hero-banner {
+  overflow: hidden;
+  border-radius: 0 0 1.25rem 1.25rem;
+  box-shadow: 0 12px 28px rgba(92, 64, 51, 0.12);
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: clamp(7rem, 22vw, 9.5rem);
+  object-fit: cover;
+  object-position: center;
+}
+
+.app-header-text {
+  padding: 1.25rem 1rem 0;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a3471c;
+}
+
+.app-header h1,
+.section-title,
+.spot-name {
+  margin: 0;
+  line-height: 1.1;
+}
+
+.app-header h1 {
+  font-size: clamp(2rem, 8vw, 2.75rem);
+}
+
+.lede {
+  margin: 0.75rem 0 0;
+  color: #5c4033;
+}
+
+.view-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.nav-button {
+  border: 1px solid rgba(164, 71, 28, 0.18);
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  background: rgba(255, 255, 255, 0.65);
+  color: #5c4033;
+  cursor: pointer;
+}
+
+.nav-button.active {
+  background: #c45c26;
+  border-color: #c45c26;
+  color: #fff8f1;
+}
+
+.panel,
+.spot-result {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(164, 71, 28, 0.12);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: 0 18px 40px rgba(92, 64, 51, 0.08);
+}
+
+.panel.centre {
+  display: grid;
+  place-items: center;
+  min-height: 12rem;
+}
+
+.section-title {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button-primary {
+  background: #c45c26;
+  color: #fff8f1;
+}
+
+.button-secondary {
+  background: #2c1810;
+  color: #fff8f1;
+}
+
+.button-ghost {
+  background: transparent;
+  color: #5c4033;
+  border: 1px solid rgba(92, 64, 51, 0.18);
+}
+
+.button-large {
+  min-width: min(100%, 16rem);
+  padding: 1.1rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.spot-name {
+  font-size: clamp(1.75rem, 7vw, 2.35rem);
+  margin-top: 0.35rem;
+}
+
+.spot-address {
+  margin: 0.5rem 0 1rem;
+  color: #5c4033;
+}
+
+.spot-photo {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.spot-map {
+  width: 100%;
+  min-height: 16rem;
+  border: 0;
+  border-radius: 1rem;
+}
+
+.status-message,
+.form-message,
+.hint {
+  margin: 0.75rem 0 0;
+}
+
+.status-message.subtle,
+.hint {
+  color: #5c4033;
+  font-size: 0.95rem;
+}
+
+.form-message.error,
+.status-message.error {
+  color: #9f1d1d;
+}
+
+.form-message.success {
+  color: #176b2c;
+}
+
+.text-link {
+  color: #a3471c;
+}
+
+.spot-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.field span {
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  border: 1px solid rgba(92, 64, 51, 0.18);
+  border-radius: 0.85rem;
+  padding: 0.85rem 1rem;
+  background: #fffdf9;
+}
+
+@media (min-width: 640px) {
+  .app {
+    padding: 0 1.5rem 3rem;
+  }
+
+  .app-header {
+    margin: 0 0 1.75rem;
+  }
+
+  .hero-banner {
+    border-radius: 1.25rem;
+  }
+
+  .app-header-text {
+    padding: 1.5rem 0 0;
+  }
+
+  .panel,
+  .spot-result {
+    padding: 1.5rem;
+  }
+}
