@@ -24,6 +24,11 @@
       "id": "netil-market",
       "name": "Netil Market",
       "address": "13-23 Westgate St, London E8 3RL"
+    },
+    {
+      "id": "zeytoona",
+      "name": "Zeytoona",
+      "address": "85 Goldsmiths Row, E2 8QR"
     }
   ]
 }
