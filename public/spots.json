@@ -29,6 +29,11 @@
       "id": "zeytoona",
       "name": "Zeytoona",
       "address": "85 Goldsmiths Row, E2 8QR"
+    },
+    {
+      "id": "gallery-cafe",
+      "name": "Gallery Cafe",
+      "address": "St. Margarets House Settlement, 21 Old Ford Rd., Bethnal Green, London E2 9PL"
     }
   ]
 }
