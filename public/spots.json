@@ -39,6 +39,11 @@
       "id": "zeytoona-2",
       "name": "Zeytoona",
       "address": "Goldsmiths Row"
+    },
+    {
+      "id": "dal-fiorentino",
+      "name": "Dal Fiorentino",
+      "address": "6 Cheshire St, London E2 6EH"
     }
   ]
 }
