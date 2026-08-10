@@ -49,6 +49,11 @@
       "id": "corner-deli",
       "name": "Corner Deli",
       "address": "69 Columbia road, London, E2 7RG"
+    },
+    {
+      "id": "leila-s-shop",
+      "name": "Leila's Shop",
+      "address": "Calvert Ave, Bethnal Green, London E2 7JP"
     }
   ]
 }
