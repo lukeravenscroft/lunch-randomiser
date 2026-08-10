@@ -35,10 +35,19 @@ export function AddSpotForm({ onSpotAdded, onCancel }: AddSpotFormProps) {
         body: JSON.stringify({ name: trimmedName, address: trimmedAddress }),
       });
 
-      const data = (await response.json()) as { spot?: Spot; error?: string };
+      let data: { spot?: Spot; error?: string; errorMessage?: string } = {};
+      try {
+        data = (await response.json()) as {
+          spot?: Spot;
+          error?: string;
+          errorMessage?: string;
+        };
+      } catch {
+        throw new Error('Could not save this spot.');
+      }
 
       if (!response.ok) {
-        throw new Error(data.error ?? 'Could not save this spot.');
+        throw new Error(data.error ?? data.errorMessage ?? 'Could not save this spot.');
       }
 
       if (!data.spot) {

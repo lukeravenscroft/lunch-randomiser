@@ -61,7 +61,7 @@ async function githubRequest(path, token, options = {}) {
   return data;
 }
 
-exports.handler = async (event) => {
+export async function handler(event) {
   if (event.httpMethod === 'OPTIONS') {
     return { statusCode: 204, headers: corsHeaders };
   }
@@ -136,4 +136,4 @@ exports.handler = async (event) => {
       error: error instanceof Error ? error.message : 'Could not save spot.',
     });
   }
-};
+}
