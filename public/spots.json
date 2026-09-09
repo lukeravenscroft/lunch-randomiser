@@ -54,6 +54,11 @@
       "id": "leila-s-shop",
       "name": "Leila's Shop",
       "address": "Calvert Ave, Bethnal Green, London E2 7JP"
+    },
+    {
+      "id": "troy",
+      "name": "Troy",
+      "address": "124 Kingsland Rd, London E2 8DP"
     }
   ]
 }
