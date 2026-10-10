@@ -64,6 +64,11 @@
       "id": "dough-dough",
       "name": "Dough dough",
       "address": "Unit 1, 222 Bethnal Grn Rd, London E2 0AA"
+    },
+    {
+      "id": "altamura-bakehouse",
+      "name": "Altamura bakehouse",
+      "address": "10 Hackney Rd, London E2 7NS"
     }
   ]
 }
