@@ -69,6 +69,11 @@
       "id": "altamura-bakehouse",
       "name": "Altamura bakehouse",
       "address": "10 Hackney Rd, London E2 7NS"
+    },
+    {
+      "id": "cremer",
+      "name": "Cremer",
+      "address": "1 Geffrye St, London E2 8JH"
     }
   ]
 }
