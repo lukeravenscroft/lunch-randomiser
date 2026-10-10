@@ -59,6 +59,11 @@
       "id": "troy",
       "name": "Troy",
       "address": "124 Kingsland Rd, London E2 8DP"
+    },
+    {
+      "id": "dough-dough",
+      "name": "Dough dough",
+      "address": "Unit 1, 222 Bethnal Grn Rd, London E2 0AA"
     }
   ]
 }
